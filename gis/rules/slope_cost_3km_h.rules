@@ -1,0 +1,5 @@
+
+0 thru 5	= 18 Zona plana
+5 thru 17	= 27 Zona inclinada
+17 thru 45	= 54 Zona accidentada 
+*		= NULL impassable

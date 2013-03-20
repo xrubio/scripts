@@ -1,0 +1,150 @@
+# load simulated data
+
+global <- read.csv('experiment1_3global.csv', sep=';')
+
+global00 <- global[global$var==0.0,]
+global01 <- global[global$var==0.1,]
+global02 <- global[global$var==0.2,]
+global03 <- global[global$var==0.3,]
+global04 <- global[global$var==0.4,]
+global05 <- global[global$var==0.5,]
+global06 <- global[global$var==0.6,]
+global07 <- global[global$var==0.7,]
+global08 <- global[global$var==0.8,]
+global09 <- global[global$var==0.9,]
+global10 <- global[global$var==1.0,]
+
+meanGlobal00 <- colMeans(global00[2:52])
+global00_0 <- global00[2,2:52]
+global00_1 <- global00[3,2:52]
+global00_2 <- global00[4,2:52]
+global00_3 <- global00[5,2:52]
+global00_4 <- global00[6,2:52]
+global00_5 <- global00[7,2:52]
+global00_6 <- global00[8,2:52]
+global00_7 <- global00[9,2:52]
+global00_8 <- global00[10,2:52]
+global00_9 <- global00[11,2:52]
+
+meanGlobal01 <- colMeans(global01[2:52])
+global01_0 <- global01[2,2:52]
+global01_1 <- global01[3,2:52]
+global01_2 <- global01[4,2:52]
+global01_3 <- global01[5,2:52]
+global01_4 <- global01[6,2:52]
+global01_5 <- global01[7,2:52]
+global01_6 <- global01[8,2:52]
+global01_7 <- global01[9,2:52]
+global01_8 <- global01[10,2:52]
+global01_9 <- global01[11,2:52]
+
+meanGlobal02 <- colMeans(global02[2:52])
+global02_0 <- global02[2,2:52]
+global02_1 <- global02[3,2:52]
+global02_2 <- global02[4,2:52]
+global02_3 <- global02[5,2:52]
+global02_4 <- global02[6,2:52]
+global02_5 <- global02[7,2:52]
+global02_6 <- global02[8,2:52]
+global02_7 <- global02[9,2:52]
+global02_8 <- global02[10,2:52]
+global02_9 <- global02[11,2:52]
+
+meanGlobal03 <- colMeans(global03[2:52])
+global03_0 <- global03[2,2:52]
+global03_1 <- global03[3,2:52]
+global03_2 <- global03[4,2:52]
+global03_3 <- global03[5,2:52]
+global03_4 <- global03[6,2:52]
+global03_5 <- global03[7,2:52]
+global03_6 <- global03[8,2:52]
+global03_7 <- global03[9,2:52]
+global03_8 <- global03[10,2:52]
+global03_9 <- global03[11,2:52]
+
+
+meanGlobal04 <- colMeans(global04[2:52])
+global04_0 <- global04[2,2:52]
+global04_1 <- global04[3,2:52]
+global04_2 <- global04[4,2:52]
+global04_3 <- global04[5,2:52]
+global04_4 <- global04[6,2:52]
+global04_5 <- global04[7,2:52]
+global04_6 <- global04[8,2:52]
+global04_7 <- global04[9,2:52]
+global04_8 <- global04[10,2:52]
+global04_9 <- global04[11,2:52]
+
+meanGlobal05 <- colMeans(global05[2:52])
+global05_0 <- global05[2,2:52]
+global05_1 <- global05[3,2:52]
+global05_2 <- global05[4,2:52]
+global05_3 <- global05[5,2:52]
+global05_4 <- global05[6,2:52]
+global05_5 <- global05[7,2:52]
+global05_6 <- global05[8,2:52]
+global05_7 <- global05[9,2:52]
+global05_8 <- global05[10,2:52]
+global05_9 <- global05[11,2:52]
+
+meanGlobal06 <- colMeans(global06[2:52])
+global06_0 <- global06[2,2:52]
+global06_1 <- global06[3,2:52]
+global06_2 <- global06[4,2:52]
+global06_3 <- global06[5,2:52]
+global06_4 <- global06[6,2:52]
+global06_5 <- global06[7,2:52]
+global06_6 <- global06[8,2:52]
+global06_7 <- global06[9,2:52]
+global06_8 <- global06[10,2:52]
+global06_9 <- global06[11,2:52]
+
+meanGlobal07 <- colMeans(global07[2:52])
+global07_0 <- global07[2,2:52]
+global07_1 <- global07[3,2:52]
+global07_2 <- global07[4,2:52]
+global07_3 <- global07[5,2:52]
+global07_4 <- global07[6,2:52]
+global07_5 <- global07[7,2:52]
+global07_6 <- global07[8,2:52]
+global07_7 <- global07[9,2:52]
+global07_8 <- global07[10,2:52]
+global07_9 <- global07[11,2:52]
+
+meanGlobal08 <- colMeans(global08[2:52])
+global08_0 <- global08[2,2:52]
+global08_1 <- global08[3,2:52]
+global08_2 <- global08[4,2:52]
+global08_3 <- global08[5,2:52]
+global08_4 <- global08[6,2:52]
+global08_5 <- global08[7,2:52]
+global08_6 <- global08[8,2:52]
+global08_7 <- global08[9,2:52]
+global08_8 <- global08[10,2:52]
+global08_9 <- global08[11,2:52]
+
+meanGlobal09 <- colMeans(global09[2:52])
+global09_0 <- global09[2,2:52]
+global09_1 <- global09[3,2:52]
+global09_2 <- global09[4,2:52]
+global09_3 <- global09[5,2:52]
+global09_4 <- global09[6,2:52]
+global09_5 <- global09[7,2:52]
+global09_6 <- global09[8,2:52]
+global09_7 <- global09[9,2:52]
+global09_8 <- global09[10,2:52]
+global09_9 <- global09[11,2:52]
+
+meanGlobal10 <- colMeans(global10[2:52])
+global10_0 <- global10[2,2:52]
+global10_1 <- global10[3,2:52]
+global10_2 <- global10[4,2:52]
+global10_3 <- global10[5,2:52]
+global10_4 <- global10[6,2:52]
+global10_5 <- global10[7,2:52]
+global10_6 <- global10[8,2:52]
+global10_7 <- global10[9,2:52]
+global10_8 <- global10[10,2:52]
+global10_9 <- global10[11,2:52]
+
+

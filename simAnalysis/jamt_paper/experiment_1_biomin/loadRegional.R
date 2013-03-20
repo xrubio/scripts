@@ -1,0 +1,150 @@
+# load simulated data
+
+regional <- read.csv('experiment1_2regional.csv', sep=';')
+
+regional00 <- regional[regional$var==0.0,]
+regional01 <- regional[regional$var==0.1,]
+regional02 <- regional[regional$var==0.2,]
+regional03 <- regional[regional$var==0.3,]
+regional04 <- regional[regional$var==0.4,]
+regional05 <- regional[regional$var==0.5,]
+regional06 <- regional[regional$var==0.6,]
+regional07 <- regional[regional$var==0.7,]
+regional08 <- regional[regional$var==0.8,]
+regional09 <- regional[regional$var==0.9,]
+regional10 <- regional[regional$var==1.0,]
+
+meanRegional00 <- colMeans(regional00[2:52])
+regional00_0 <- regional00[2,2:52]
+regional00_1 <- regional00[3,2:52]
+regional00_2 <- regional00[4,2:52]
+regional00_3 <- regional00[5,2:52]
+regional00_4 <- regional00[6,2:52]
+regional00_5 <- regional00[7,2:52]
+regional00_6 <- regional00[8,2:52]
+regional00_7 <- regional00[9,2:52]
+regional00_8 <- regional00[10,2:52]
+regional00_9 <- regional00[11,2:52]
+
+meanRegional01 <- colMeans(regional01[2:52])
+regional01_0 <- regional01[2,2:52]
+regional01_1 <- regional01[3,2:52]
+regional01_2 <- regional01[4,2:52]
+regional01_3 <- regional01[5,2:52]
+regional01_4 <- regional01[6,2:52]
+regional01_5 <- regional01[7,2:52]
+regional01_6 <- regional01[8,2:52]
+regional01_7 <- regional01[9,2:52]
+regional01_8 <- regional01[10,2:52]
+regional01_9 <- regional01[11,2:52]
+
+meanRegional02 <- colMeans(regional02[2:52])
+regional02_0 <- regional02[2,2:52]
+regional02_1 <- regional02[3,2:52]
+regional02_2 <- regional02[4,2:52]
+regional02_3 <- regional02[5,2:52]
+regional02_4 <- regional02[6,2:52]
+regional02_5 <- regional02[7,2:52]
+regional02_6 <- regional02[8,2:52]
+regional02_7 <- regional02[9,2:52]
+regional02_8 <- regional02[10,2:52]
+regional02_9 <- regional02[11,2:52]
+
+meanRegional03 <- colMeans(regional03[2:52])
+regional03_0 <- regional03[2,2:52]
+regional03_1 <- regional03[3,2:52]
+regional03_2 <- regional03[4,2:52]
+regional03_3 <- regional03[5,2:52]
+regional03_4 <- regional03[6,2:52]
+regional03_5 <- regional03[7,2:52]
+regional03_6 <- regional03[8,2:52]
+regional03_7 <- regional03[9,2:52]
+regional03_8 <- regional03[10,2:52]
+regional03_9 <- regional03[11,2:52]
+
+
+meanRegional04 <- colMeans(regional04[2:52])
+regional04_0 <- regional04[2,2:52]
+regional04_1 <- regional04[3,2:52]
+regional04_2 <- regional04[4,2:52]
+regional04_3 <- regional04[5,2:52]
+regional04_4 <- regional04[6,2:52]
+regional04_5 <- regional04[7,2:52]
+regional04_6 <- regional04[8,2:52]
+regional04_7 <- regional04[9,2:52]
+regional04_8 <- regional04[10,2:52]
+regional04_9 <- regional04[11,2:52]
+
+meanRegional05 <- colMeans(regional05[2:52])
+regional05_0 <- regional05[2,2:52]
+regional05_1 <- regional05[3,2:52]
+regional05_2 <- regional05[4,2:52]
+regional05_3 <- regional05[5,2:52]
+regional05_4 <- regional05[6,2:52]
+regional05_5 <- regional05[7,2:52]
+regional05_6 <- regional05[8,2:52]
+regional05_7 <- regional05[9,2:52]
+regional05_8 <- regional05[10,2:52]
+regional05_9 <- regional05[11,2:52]
+
+meanRegional06 <- colMeans(regional06[2:52])
+regional06_0 <- regional06[2,2:52]
+regional06_1 <- regional06[3,2:52]
+regional06_2 <- regional06[4,2:52]
+regional06_3 <- regional06[5,2:52]
+regional06_4 <- regional06[6,2:52]
+regional06_5 <- regional06[7,2:52]
+regional06_6 <- regional06[8,2:52]
+regional06_7 <- regional06[9,2:52]
+regional06_8 <- regional06[10,2:52]
+regional06_9 <- regional06[11,2:52]
+
+meanRegional07 <- colMeans(regional07[2:52])
+regional07_0 <- regional07[2,2:52]
+regional07_1 <- regional07[3,2:52]
+regional07_2 <- regional07[4,2:52]
+regional07_3 <- regional07[5,2:52]
+regional07_4 <- regional07[6,2:52]
+regional07_5 <- regional07[7,2:52]
+regional07_6 <- regional07[8,2:52]
+regional07_7 <- regional07[9,2:52]
+regional07_8 <- regional07[10,2:52]
+regional07_9 <- regional07[11,2:52]
+
+meanRegional08 <- colMeans(regional08[2:52])
+regional08_0 <- regional08[2,2:52]
+regional08_1 <- regional08[3,2:52]
+regional08_2 <- regional08[4,2:52]
+regional08_3 <- regional08[5,2:52]
+regional08_4 <- regional08[6,2:52]
+regional08_5 <- regional08[7,2:52]
+regional08_6 <- regional08[8,2:52]
+regional08_7 <- regional08[9,2:52]
+regional08_8 <- regional08[10,2:52]
+regional08_9 <- regional08[11,2:52]
+
+meanRegional09 <- colMeans(regional09[2:52])
+regional09_0 <- regional09[2,2:52]
+regional09_1 <- regional09[3,2:52]
+regional09_2 <- regional09[4,2:52]
+regional09_3 <- regional09[5,2:52]
+regional09_4 <- regional09[6,2:52]
+regional09_5 <- regional09[7,2:52]
+regional09_6 <- regional09[8,2:52]
+regional09_7 <- regional09[9,2:52]
+regional09_8 <- regional09[10,2:52]
+regional09_9 <- regional09[11,2:52]
+
+meanRegional10 <- colMeans(regional10[2:52])
+regional10_0 <- regional10[2,2:52]
+regional10_1 <- regional10[3,2:52]
+regional10_2 <- regional10[4,2:52]
+regional10_3 <- regional10[5,2:52]
+regional10_4 <- regional10[6,2:52]
+regional10_5 <- regional10[7,2:52]
+regional10_6 <- regional10[8,2:52]
+regional10_7 <- regional10[9,2:52]
+regional10_8 <- regional10[10,2:52]
+regional10_9 <- regional10[11,2:52]
+
+

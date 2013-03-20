@@ -1,0 +1,150 @@
+# load simulated data
+
+local <- read.csv('experiment1_1local.csv', sep=';')
+
+local00 <- local[local$var==0.0,]
+local01 <- local[local$var==0.1,]
+local02 <- local[local$var==0.2,]
+local03 <- local[local$var==0.3,]
+local04 <- local[local$var==0.4,]
+local05 <- local[local$var==0.5,]
+local06 <- local[local$var==0.6,]
+local07 <- local[local$var==0.7,]
+local08 <- local[local$var==0.8,]
+local09 <- local[local$var==0.9,]
+local10 <- local[local$var==1.0,]
+
+meanLocal00 <- colMeans(local00[2:52])
+local00_0 <- local00[2,2:52]
+local00_1 <- local00[3,2:52]
+local00_2 <- local00[4,2:52]
+local00_3 <- local00[5,2:52]
+local00_4 <- local00[6,2:52]
+local00_5 <- local00[7,2:52]
+local00_6 <- local00[8,2:52]
+local00_7 <- local00[9,2:52]
+local00_8 <- local00[10,2:52]
+local00_9 <- local00[11,2:52]
+
+meanLocal01 <- colMeans(local01[2:52])
+local01_0 <- local01[2,2:52]
+local01_1 <- local01[3,2:52]
+local01_2 <- local01[4,2:52]
+local01_3 <- local01[5,2:52]
+local01_4 <- local01[6,2:52]
+local01_5 <- local01[7,2:52]
+local01_6 <- local01[8,2:52]
+local01_7 <- local01[9,2:52]
+local01_8 <- local01[10,2:52]
+local01_9 <- local01[11,2:52]
+
+meanLocal02 <- colMeans(local02[2:52])
+local02_0 <- local02[2,2:52]
+local02_1 <- local02[3,2:52]
+local02_2 <- local02[4,2:52]
+local02_3 <- local02[5,2:52]
+local02_4 <- local02[6,2:52]
+local02_5 <- local02[7,2:52]
+local02_6 <- local02[8,2:52]
+local02_7 <- local02[9,2:52]
+local02_8 <- local02[10,2:52]
+local02_9 <- local02[11,2:52]
+
+meanLocal03 <- colMeans(local03[2:52])
+local03_0 <- local03[2,2:52]
+local03_1 <- local03[3,2:52]
+local03_2 <- local03[4,2:52]
+local03_3 <- local03[5,2:52]
+local03_4 <- local03[6,2:52]
+local03_5 <- local03[7,2:52]
+local03_6 <- local03[8,2:52]
+local03_7 <- local03[9,2:52]
+local03_8 <- local03[10,2:52]
+local03_9 <- local03[11,2:52]
+
+
+meanLocal04 <- colMeans(local04[2:52])
+local04_0 <- local04[2,2:52]
+local04_1 <- local04[3,2:52]
+local04_2 <- local04[4,2:52]
+local04_3 <- local04[5,2:52]
+local04_4 <- local04[6,2:52]
+local04_5 <- local04[7,2:52]
+local04_6 <- local04[8,2:52]
+local04_7 <- local04[9,2:52]
+local04_8 <- local04[10,2:52]
+local04_9 <- local04[11,2:52]
+
+meanLocal05 <- colMeans(local05[2:52])
+local05_0 <- local05[2,2:52]
+local05_1 <- local05[3,2:52]
+local05_2 <- local05[4,2:52]
+local05_3 <- local05[5,2:52]
+local05_4 <- local05[6,2:52]
+local05_5 <- local05[7,2:52]
+local05_6 <- local05[8,2:52]
+local05_7 <- local05[9,2:52]
+local05_8 <- local05[10,2:52]
+local05_9 <- local05[11,2:52]
+
+meanLocal06 <- colMeans(local06[2:52])
+local06_0 <- local06[2,2:52]
+local06_1 <- local06[3,2:52]
+local06_2 <- local06[4,2:52]
+local06_3 <- local06[5,2:52]
+local06_4 <- local06[6,2:52]
+local06_5 <- local06[7,2:52]
+local06_6 <- local06[8,2:52]
+local06_7 <- local06[9,2:52]
+local06_8 <- local06[10,2:52]
+local06_9 <- local06[11,2:52]
+
+meanLocal07 <- colMeans(local07[2:52])
+local07_0 <- local07[2,2:52]
+local07_1 <- local07[3,2:52]
+local07_2 <- local07[4,2:52]
+local07_3 <- local07[5,2:52]
+local07_4 <- local07[6,2:52]
+local07_5 <- local07[7,2:52]
+local07_6 <- local07[8,2:52]
+local07_7 <- local07[9,2:52]
+local07_8 <- local07[10,2:52]
+local07_9 <- local07[11,2:52]
+
+meanLocal08 <- colMeans(local08[2:52])
+local08_0 <- local08[2,2:52]
+local08_1 <- local08[3,2:52]
+local08_2 <- local08[4,2:52]
+local08_3 <- local08[5,2:52]
+local08_4 <- local08[6,2:52]
+local08_5 <- local08[7,2:52]
+local08_6 <- local08[8,2:52]
+local08_7 <- local08[9,2:52]
+local08_8 <- local08[10,2:52]
+local08_9 <- local08[11,2:52]
+
+meanLocal09 <- colMeans(local09[2:52])
+local09_0 <- local09[2,2:52]
+local09_1 <- local09[3,2:52]
+local09_2 <- local09[4,2:52]
+local09_3 <- local09[5,2:52]
+local09_4 <- local09[6,2:52]
+local09_5 <- local09[7,2:52]
+local09_6 <- local09[8,2:52]
+local09_7 <- local09[9,2:52]
+local09_8 <- local09[10,2:52]
+local09_9 <- local09[11,2:52]
+
+meanLocal10 <- colMeans(local10[2:52])
+local10_0 <- local10[2,2:52]
+local10_1 <- local10[3,2:52]
+local10_2 <- local10[4,2:52]
+local10_3 <- local10[5,2:52]
+local10_4 <- local10[6,2:52]
+local10_5 <- local10[7,2:52]
+local10_6 <- local10[8,2:52]
+local10_7 <- local10[9,2:52]
+local10_8 <- local10[10,2:52]
+local10_9 <- local10[11,2:52]
+
+
