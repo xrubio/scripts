@@ -1,0 +1,78 @@
+
+results <- read.csv('prova.csv', sep=';')
+
+results_0 <- results[results$var==0,c(2:102)]
+results_10 <- results[results$var==10,c(2:102)]
+results_20 <- results[results$var==20,c(2:102)]
+results_30 <- results[results$var==30,c(2:102)]
+results_40 <- results[results$var==40,c(2:102)]
+results_50 <- results[results$var==50,c(2:102)]
+results_60 <- results[results$var==60,c(2:102)]
+results_70 <- results[results$var==70,c(2:102)]
+results_80 <- results[results$var==80,c(2:102)]
+results_90 <- results[results$var==90,c(2:102)]
+results_100 <- results[results$var==100,c(2:102)]
+
+par(mfrow=c(3,2))
+boxplot(results_0, main="0")
+boxplot(results_20, main="20")
+boxplot(results_40, main="40")
+boxplot(results_60, main="60")
+boxplot(results_80, main="80")
+boxplot(results_100, main="100")
+	
+
+mean0 <- sapply(results_0, mean)
+mean10 <- sapply(results_10, mean)
+mean20 <- sapply(results_20, mean)
+mean30 <- sapply(results_30, mean)
+mean40 <- sapply(results_40, mean)
+mean50 <- sapply(results_50, mean)
+mean60 <- sapply(results_60, mean)
+mean70 <- sapply(results_70, mean)
+mean80 <- sapply(results_80, mean)
+mean90 <- sapply(results_90, mean)
+mean100 <- sapply(results_100, mean)
+mean0 <- sapply(results_0, mean)
+
+sd0 <- sapply(results_0, sd)
+sd10 <- sapply(results_10, sd)
+sd20 <- sapply(results_20, sd)
+sd30 <- sapply(results_30, sd)
+sd40 <- sapply(results_40, sd)
+sd50 <- sapply(results_50, sd)
+sd60 <- sapply(results_60, sd)
+sd70 <- sapply(results_70, sd)
+sd80 <- sapply(results_80, sd)
+sd90 <- sapply(results_90, sd)
+sd100 <- sapply(results_100, sd)
+
+xLim <- c(0,100)
+yLim <- c(0,200)
+
+plot(mean0, xlim=xLim, ylim=yLim, type='l', col='gray0', lwd=3, lty=1)
+lines(mean10, col='gray10', lwd=3, lty=1)
+lines(mean20, col='gray20', lwd=3, lty=1)
+lines(mean30, col='gray30', lwd=3, lty=1)
+lines(mean40, col='gray40', lwd=3, lty=1)
+lines(mean50, col='gray50', lwd=3, lty=1)
+lines(mean60, col='gray60', lwd=3, lty=1)
+lines(mean70, col='gray70', lwd=3, lty=1)
+lines(mean80, col='gray80', lwd=3, lty=1)
+lines(mean90, col='gray90', lwd=3, lty=1)
+lines(mean100, col='gray100', lwd=3, lty=1)
+
+	
+yLim <- c(0,50)
+
+plot(sd0, xlim=xLim, ylim=yLim, type='l', col='gray0', lwd=3, lty=1)
+lines(sd10, col='gray10', lwd=3, lty=1)
+lines(sd20, col='gray20', lwd=3, lty=1)
+lines(sd30, col='gray30', lwd=3, lty=1)
+lines(sd40, col='gray40', lwd=3, lty=1)
+lines(sd50, col='gray50', lwd=3, lty=1)
+lines(sd60, col='gray60', lwd=3, lty=1)
+lines(sd70, col='gray70', lwd=3, lty=1)
+lines(sd80, col='gray80', lwd=3, lty=1)
+lines(sd90, col='gray90', lwd=3, lty=1)
+lines(sd100, col='gray100', lwd=3, lty=1)
